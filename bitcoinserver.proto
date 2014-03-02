@@ -1,0 +1,7 @@
+package BitcoinServer;
+option java_package = "com.BitcoinServer";
+option java_outer_classname = "Protos";
+
+message TransactionList {
+    repeated bytes transactions = 1;    // List of transactions
+}
