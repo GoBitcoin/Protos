@@ -3,5 +3,10 @@ option java_package = "com.BitcoinServer";
 option java_outer_classname = "Protos";
 
 message TransactionList {
-    repeated bytes transactions = 1;    // List of transactions
+    optional string network = 1 [default = "main"]; // "main" or "test"
+    repeated bytes transactions = 2;    // List of transactions
+}
+
+message BroadcastResponse {
+    optional string error = 1;
 }
