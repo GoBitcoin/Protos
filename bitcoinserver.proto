@@ -1,12 +1,12 @@
+import "paymentrequest.proto";
+
 package BitcoinServer;
 option java_package = "com.BitcoinServer";
 option java_outer_classname = "Protos";
 
-import "paymentrequest.proto";
-
 message BroadcastPayment {
-    optional PaymentRequest paymentRequest = 1;
-    optional Payment payment = 2;
+    optional payments.PaymentRequest paymentRequest = 1;
+    optional payments.Payment payment = 2;
 }
 
 message BroadcastPaymentResponse {
