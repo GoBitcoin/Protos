@@ -10,6 +10,6 @@ message BroadcastPayment {
 }
 
 message BroadcastPaymentResponse {
-   required BroadcastPayment = 1;
-   optional error = 2;
+   required BroadcastPayment broadcast = 1;
+   optional string error = 2;
 }
