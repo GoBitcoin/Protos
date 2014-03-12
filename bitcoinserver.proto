@@ -2,11 +2,14 @@ package BitcoinServer;
 option java_package = "com.BitcoinServer";
 option java_outer_classname = "Protos";
 
-message TransactionList {
-    optional string network = 1 [default = "main"]; // "main" or "test"
-    repeated bytes transactions = 2;    // List of transactions
+import "paymentrequest.proto";
+
+message BroadcastPayment {
+    optional PaymentRequest paymentRequest = 1;
+    optional Payment payment = 2;
 }
 
-message BroadcastResponse {
-    optional string error = 1;
+message BroadcastPaymentResponse {
+   required BroadcastPayment = 1;
+   optional error = 2;
 }
