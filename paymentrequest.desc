@@ -1,0 +1,32 @@
+
+˜
+#lib/api/protos/paymentrequest.protopayments"+
+Output
+amount (:0
+script ("£
+PaymentDetails
+network (	:main!
+outputs (2.payments.Output
+time (
+expires (
+memo (	
+payment_url (	
+merchant_data ("•
+PaymentRequest"
+payment_details_version (:1
+pki_type (	:none
+pki_data ("
+serialized_payment_details (
+	signature ("'
+X509Certificates
+certificate ("i
+Payment
+merchant_data (
+transactions (#
+	refund_to (2.payments.Output
+memo (	">
+
+PaymentACK"
+payment (2.payments.Payment
+memo (	B(
+org.bitcoin.protocols.paymentsBProtos
